@@ -1,6 +1,19 @@
 {
 	"name": "directus-extension-panel-fathom-analytics",
 	"description": "Display your Fathom Analytics data in your Directus dashboard panel.",
+	"author": {
+		"email": "dalton@sutton.io",
+		"name": "Dalton Sutton"
+	},
+	"license": "gpl-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/daltonsutton/directus-extension-panel-fathom-analytics.git"
+	},
+	"bugs": {
+		"url": "https://github.com/daltonsutton/directus-extension-panel-fathom-analytics/issues"
+	},
+	"homepage": "https://github.com/daltonsutton/directus-extension-panel-fathom-analytics",
 	"icon": "extension",
 	"version": "1.0.0",
 	"keywords": [
