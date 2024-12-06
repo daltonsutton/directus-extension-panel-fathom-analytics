@@ -13,6 +13,9 @@
 	"bugs": {
 		"url": "https://github.com/daltonsutton/directus-extension-panel-fathom-analytics/issues"
 	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
 	"homepage": "https://github.com/daltonsutton/directus-extension-panel-fathom-analytics",
 	"icon": "extension",
 	"version": "1.0.0",
