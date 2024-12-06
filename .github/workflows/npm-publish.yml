@@ -17,8 +17,10 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          files: |
-            dist/index.js
+          name: package
+          path: |
+            dist/
+            package.json
 
   publish-github:
     needs: build
@@ -27,8 +29,9 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: package
-          files: |
-            dist/index.js
+          path: |
+            dist/
+            package.json
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -44,8 +47,9 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: package
-          files: |
-            dist/index.js
+          path: |
+            dist/
+            package.json
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
