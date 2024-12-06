@@ -18,7 +18,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: package
-          path: dist/
+          path: |
+            dist/
+            package.json  # Ensure this is at the root in your repository
 
   publish-github:
     needs: build
@@ -27,7 +29,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: package
-          path: dist
+          path: .  # Downloads to the current working directory
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -43,7 +45,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: package
-          path: dist
+          path: .  # Downloads to the current working directory
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
