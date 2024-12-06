@@ -1,5 +1,5 @@
 {
-	"name": "directus-extension-panel-fathom-analytics",
+	"name": "@daltonsutton/directus-extension-panel-fathom-analytics",
 	"description": "Display your Fathom Analytics data in your Directus dashboard panel.",
 	"author": {
 		"email": "dalton@sutton.io",
